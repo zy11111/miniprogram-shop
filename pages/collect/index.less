@@ -1,0 +1,51 @@
+page {
+  background-color: #f3f4f6;
+}
+.collext_main {
+  .collect_title {
+    padding: 40rpx 0;
+    .collect_tips {
+      padding: 15rpx;
+      background-color: #fff;
+      border: 1rpx solid #ccc;
+      margin-left: 25rpx;
+    }
+    .active {
+      color: var(--themeColor);
+      border-color: currentColor;
+    }
+  }
+  .collect_content {
+    .goods_item {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      .goods_img_wrap {
+        display: flex;
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+        image {
+          width: 70%;
+        }
+      }
+      .goods_info_wrap {
+        display: flex;
+        flex: 3;
+        flex-direction: column;  // 主轴方向
+        justify-content: space-around;  // 空白环绕
+        .goods_name {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;  // 第几行显示...
+  
+        }
+        .goods_price {
+          color: var(--themeColor);
+          font-size: 32rpx;
+        }
+      }
+    }
+  }
+}

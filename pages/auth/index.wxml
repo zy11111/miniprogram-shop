@@ -1,0 +1,8 @@
+<view>
+  <view class="auth_btn">
+    <button plain type="primary" open-type="getUserInfo" bindgetuserinfo="handleGetUserrInfo">
+      获取授权
+    </button>
+  </view>
+</view>
+  
